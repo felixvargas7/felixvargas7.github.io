@@ -1,0 +1,215 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Root CSS Variables */
+
+:root {
+  --bg-main: #7A3FC8;
+  --bg-surface: #1E2C4F;
+
+  --text-primary: #F6F2F0;
+  --text-muted: #A8A6A3;
+
+  --accent-main: #C7378B;
+  --accent-glow: #4BC3FF;
+  --accent-detail: #D6A84F;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  --font-base: system-ui, sans-serif;
+  --font-heading: system-ui, sans-serif;
+
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+
+  --shadow-deep: 0 20px 40px rgba(15, 26, 57, 0,6);
+}
+
+
+/* Global/Base CSS Styles */
+
+header {
+    background-color:#1E2C4F;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid paleturquoise;
+    overscroll-behavior-y: none;
+}    
+
+header p {
+    text-align: center;
+}
+body {
+  font-family: var(--font-base);
+  color: var(--text-primary);
+  background-color: var(--bg-main);
+  line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Typography CSS */
+
+h1, h2, h3 {
+    margin-bottom: var(--spacing-xs);
+    font-weight: bold;
+}
+
+h1 { 
+    font-size: 2rem; 
+}
+
+h2 { 
+    font-size: 1.4rem; 
+}
+
+p {
+    color: var(--text-muted);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+ul {
+    list-style: none;
+}
+@media (min-width: 768px) {
+    h1 { 
+    font-size: 3.5rem; 
+}
+
+    h2 { 
+    font-size: 1.75rem; 
+}
+
+}
+
+@media (min-width: 1024px) {
+    h1 {
+    font-size: 5rem;
+    }
+    h2 {
+    font-size: 2rem;
+    }
+}
+
+/* Layout CSS Containers */
+
+.container {
+    width: 100%;
+    padding: 0 var(--spacing-sm);
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    section {
+    padding: 3rem 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    section {
+    padding: 5rem 2rem;
+    }
+}
+
+/* Top to Bottom CSS Sections */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: rox;
+        padding: 20px;
+    }
+}
+
+/* Components CSS */
+
+.techskills-title {
+    padding-top: 20px;
+}
+
+.techskills-grid {
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.projects-grid {
+    display: column;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.projects-card {
+    border: 1px solid #F4D13D;
+}
+
+#home {
+    min-height: 100vh;
+    display: flex;
+} 
+
+
+
+/* Footer CSS */
+
+
+/* Utilities */ 
