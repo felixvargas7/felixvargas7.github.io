@@ -11,14 +11,14 @@
     <!-- Potential Logo -->
     <header>
       <!-- Navigation -->
-    <p class="logo">FV</p>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <p class="logo" aria-label="Felix Vargas homepage">FV</p>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
     <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
         <span></span>
         <span></span>
     </label>
-              <nav>
+              <nav aria-label="Main navigation">
               <ul class="nav-menu">
                   <li>
                       <a href="#home">HOME</a>
@@ -39,14 +39,14 @@
     <!-- Hero Section -->
       <section id="home"class="hero">
 
-        <div class="menacing menacing-hero-1">ゴ</div>
-        <div class="menacing menacing-hero-2">ゴ</div>
-        <div class="menacing menacing-hero-3">ゴ</div>
-        <div class="menacing menacing-hero-4">ゴ</div>
-        <div class="menacing menacing-hero-5">ゴ</div>
-        <div class="menacing menacing-hero-6">ゴ</div>
-        <div class="menacing menacing-hero-7">ゴ</div>
-        <div class="menacing menacing-hero-8">ゴ</div>
+        <div class="menacing menacing-hero-1" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-2" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-3" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-4" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-5" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-6" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-7" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-8" aria-hidden="true">ゴ</div>
 
         <p>WELCOME TO MY WORLD</p>
         <h1>FELIX VARGAS</h1>
@@ -61,10 +61,14 @@
         <p>
           SHOWING WHAT I CAN DO.
         </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
       </section>
     <!-- About Me Section -->
       <section id="about">
-        <h2>About ME</h2>
+        <h2>About Me</h2>
         <div>
           <div>
             <p>
@@ -95,7 +99,7 @@
         <ul class="projects-grid">
           <li class="projects-card">
             <h3>Rock, Paper, Scissors Project</h3>
-            <div><img src="img/rock-paper-scissors.png" alt="rock-paper-scissors"></div>
+            <div><img src="img/rock-paper-scissors.png" alt="Rock, Papper, Scissors command-line game interface"></div>
             <p>Utilized command line interface (CLI) to create a mini-game, tracking wins, losses and more</p>
             <ul>
                 <li>JavaScript</li>
@@ -109,7 +113,7 @@
           </li>
           <li class="projects-card">
               <h3>Personal Portfolio</h3>
-            <div><img src="img/personal-portfolio.png" alt="personal-portfolio"></div>
+            <div><img src="img/personal-portfolio.png" alt="Personal Portfolio Project"></div>
             <p>Constructed a webpage, showcasing projects created</p>
             <ul>
                 <li>HTML</li>
@@ -118,12 +122,12 @@
             </ul>
             <div>
                 <a class="projects-card-buttons"href="#home">Live Demo</a>
-                <a class="projects-card-buttons"href="#home">GitHub</a>
+                <a class="projects-card-buttons"href="#home" aria-label="View Rock Paper Scissors project on GitHub">GitHub</a>
             </div>
           </li>
           <li class="projects-card">
               <h3>Stage-Race-Simulator</h3>
-            <div><img src="img/horse-race.png" alt="horse-race-simulator"></div>
+            <div><img src="img/horse-race.png" alt="Horse-Race-Simulator"></div>
             <p>(In progress) Created a simulated horse race using command line interface (CLI)</p>
             <ul>
                 <li>JavaScript</li>
@@ -132,7 +136,7 @@
             </ul>
             <div>
                 <a class="projects-card-buttons"href="#home">Live Demo</a>
-                <a class="projects-card-buttons"href="#home">GitHub</a>
+                <a class="projects-card-buttons"href="#home" aria-label="View Horse Race Simulator project on GitHub">GitHub</a>
             </div>
           </li>
           <li class="projects-card">
@@ -146,7 +150,7 @@
             </ul>
             <div>
                 <a class="projects-card-buttons"href="#home">Live Demo</a>
-                <a class="projects-card-buttons"href="#home">GitHub</a>
+                <a class="projects-card-buttons"href="#home"  aria-label="View upcoming project on GitHub">GitHub</a>
             </div>
           </li>
         </ul>
@@ -161,18 +165,18 @@
             <!-- <div> -->
                 <div class="contact-me-box">
                     <label for="">Name</label>
-                    <input type="text">
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="contact-me-box">
                     <label for="">E-mail</label>
-                    <input type="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
             <!-- </div> -->
             <div class="contact-me-box">
                 <label for="">Message</label>
-                <textarea name="" id=""></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button href="home" type="submit">Submit</button>
+            <button class="btn-submit btn btn-primary"href="#home" type="submit">Submit</button>
             </form>
             <div class="other-contacts">
                 <h3>Other ways to contact me >>></h3>
@@ -188,7 +192,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/fxliez/" target"_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a href="https://www.instagram.com/fxliez/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                       <i class="fab fa-instagram"></i>
                     </a>
                   </li>
@@ -197,7 +201,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <p>Designed and built by Felix Vargas</p>
       <p>Copyright 2026 All Rights Reserved</p>
       <ul>
