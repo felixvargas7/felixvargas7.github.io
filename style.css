@@ -333,7 +333,7 @@ header:has(#nav-toggle:checked) ~ nav {
   transform: translateY(-3px);
 }
 
-.hero .menacing {
+/* .hero .menacing {
   position: absolute;
   font-size: var(--menace-size-sm);
   color: var(--accent-detail);
@@ -462,7 +462,7 @@ header:has(#nav-toggle:checked) ~ nav {
   top: 65%;
   right: 8%;
   animation: menacing-shake-up 1s ease-in-out infinite;
-}
+} */
 
 #nav-toggle:checked ~ nav {
   max-height: 400px;
