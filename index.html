@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Felix Vargas \\ Web Developer</title>
   </head>
@@ -11,31 +12,46 @@
     <header>
       <!-- Navigation -->
     <p class="logo">FV</p>
-    </header>
-    <main>
-      <div>
-          <nav>
-              <ul>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+              <nav>
+              <ul class="nav-menu">
                   <li>
                       <a href="#home">HOME</a>
                     </li>
                     <li>
-                        <a href="#">ABOUT</a>
+                        <a href="#about">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#">PROJECTS</a>
+                        <a href="#projects">PROJECTS</a>
                     </li>
                     <li>
-                        <a href="#">CONTACT</a>
+                        <a href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
-        </div>
+    </header>
+    <main>
     <!-- Hero Section -->
       <section id="home"class="hero">
+
+        <div class="menacing menacing-hero-1">ゴ</div>
+        <div class="menacing menacing-hero-2">ゴ</div>
+        <div class="menacing menacing-hero-3">ゴ</div>
+        <div class="menacing menacing-hero-4">ゴ</div>
+        <div class="menacing menacing-hero-5">ゴ</div>
+        <div class="menacing menacing-hero-6">ゴ</div>
+        <div class="menacing menacing-hero-7">ゴ</div>
+        <div class="menacing menacing-hero-8">ゴ</div>
+
         <p>WELCOME TO MY WORLD</p>
         <h1>FELIX VARGAS</h1>
-        <p>FULL-STACK DEVELOPER</p>
+        <p>ASPIRING DEVELOPER</p>
+        
         <p>
           CULTIVATING CREATIVITY.
         </p>
@@ -47,136 +63,135 @@
         </p>
       </section>
     <!-- About Me Section -->
-      <section id="about-me">
+      <section id="about">
         <h2>About ME</h2>
         <div>
           <div>
             <p>
               Hello, my name is Felix Vargas, a software engineer from
-              Washington Heights, Manhattan. Before joining The Marcy Lab
-              School, I was on the search for potential career interests,
-              exploring many avenues of life trying to decide what was a
-              worthwhile endeavor to pursue. I was drawn to programming by
-              witnessing the culmination of much dedication, effort, and
-              creativity within my friend's project. I`m passionate about design
+              Washington Heights, Manhattan. I`m passionate about design
               and creativity, and love building innovative projects that show a
               piece of me in them. When I`m not coding, you`ll find me cooking
               new and intriguing recipes, playing video games, and reading
-              various categories of fiction. A developer of innovation, blending
-              authenticity with collaborative efforts. I truly enjoy first and
-              foremost
+              various categories of fiction. 
             </p>
           </div>
           <div>
             <h3 class="techskills-title">Tech Skills</h3>
-            <ul class="techskills-grid">
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Node.js</li>
-              <li>Git</li>
-              <li>GitHub</li>
+            <ul class ="techskills-grid">
+              <li class ="techskills-element">JavaScript</li>
+              <li class ="techskills-element">HTML</li>
+              <li class ="techskills-element">CSS</li>
+              <li class ="techskills-element">Node.js</li>
+              <li class ="techskills-element">Git</li>
+              <li class ="techskills-element">GitHub</li>
             </ul>
           </div>
         </div>
       </section>
     <!-- Project Cards Section -->
-      <section>
+      <section id="projects">
         <h2>Projects</h2>
         <ul class="projects-grid">
           <li class="projects-card">
-            <div><img src="" alt=""></div>
-            <h3>Project 1</h3>
-            <p>Project 1 Description</p>
+            <h3>Rock, Paper, Scissors Project</h3>
+            <div><img src="img/rock-paper-scissors.png" alt="rock-paper-scissors"></div>
+            <p>Utilized command line interface (CLI) to create a mini-game, tracking wins, losses and more</p>
             <ul>
-                <li>Tech Language 1</li>
-                <li>Tech Language 2</li>
-                <li>Tech Language 3</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Command Terminal</li>
             </ul>
             <div>
-                <a href="">Live Demo</a>
-                <a href="">GitHub</a>
+                <a class="projects-card-buttons"href="#home">Live Demo</a>
+                <a class="projects-card-buttons"href="#home">GitHub</a>
             </div>
           </li>
           <li class="projects-card">
-            <div><img src="" alt=""></div>
-            <h3>Project 2</h3>
-            <p>Project 2 Description</p>
+              <h3>Personal Portfolio</h3>
+            <div><img src="img/personal-portfolio.png" alt="personal-portfolio"></div>
+            <p>Constructed a webpage, showcasing projects created</p>
             <ul>
-                <li>Tech Language 1</li>
-                <li>Tech Language 2</li>
-                <li>Tech Language 3</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Claude AI</li>
             </ul>
             <div>
-                <a href="">Live Demo</a>
-                <a href="">GitHub</a>
+                <a class="projects-card-buttons"href="#home">Live Demo</a>
+                <a class="projects-card-buttons"href="#home">GitHub</a>
             </div>
           </li>
           <li class="projects-card">
-            <div><img src="" alt=""></div>
-            <h3>Project 3</h3>
-            <p>Project 3 Description</p>
+              <h3>Stage-Race-Simulator</h3>
+            <div><img src="img/horse-race.png" alt="horse-race-simulator"></div>
+            <p>(In progress) Created a simulated horse race using command line interface (CLI)</p>
             <ul>
-                <li>Tech Language 1</li>
-                <li>Tech Language 2</li>
+                <li>JavaScript</li>
+                <li>Command Terminal</li>
                 <li>Tech Language 3</li>
             </ul>
             <div>
-                <a href="">Live Demo</a>
-                <a href="">GitHub</a>
+                <a class="projects-card-buttons"href="#home">Live Demo</a>
+                <a class="projects-card-buttons"href="#home">GitHub</a>
             </div>
           </li>
           <li class="projects-card">
-            <div><img src="" alt=""></div>
-            <h3>Project 4</h3>
-            <p>Project 4 Description</p>
+              <h3>Future Project</h3>
+            <div><img src="img/upcoming.png" alt="upcoming"></div>
+            <p>Future Project (Upcoming) Looking for inspiration to make a new project</p>
             <ul>
-                <li>Tech Language 1</li>
-                <li>Tech Language 2</li>
-                <li>Tech Language 3</li>
+                <li>Tech Language/Skill</li>
+                <li>Tech Language/Skill</li>
+                <li>Tech Language/Skill</li>
             </ul>
             <div>
-                <a href="">Live Demo</a>
-                <a href="">GitHub</a>
+                <a class="projects-card-buttons"href="#home">Live Demo</a>
+                <a class="projects-card-buttons"href="#home">GitHub</a>
             </div>
           </li>
         </ul>
         </ul>
       </section>
     <!-- Contact Info Section -->
-      <section>
+      <section id="contact">
         <h2>Contact Me</h2>
         <p>Want to reach out to me? I'd love to chat, offer input, or collaborate on new experiences!</p>
         <div>
             <form action="">
-            <div>
-                <div>
+            <!-- <div> -->
+                <div class="contact-me-box">
                     <label for="">Name</label>
                     <input type="text">
                 </div>
-                <div>
+                <div class="contact-me-box">
                     <label for="">E-mail</label>
                     <input type="email">
                 </div>
-            </div>
-            <div>
-                <label for="">Additional Notes</label>
+            <!-- </div> -->
+            <div class="contact-me-box">
+                <label for="">Message</label>
                 <textarea name="" id=""></textarea>
             </div>
-            <button></button>
+            <button href="home" type="submit">Submit</button>
             </form>
-            <div>
+            <div class="other-contacts">
                 <h3>Other ways to contact me >>></h3>
-                <ul>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
+                <ul class="contact-links-icon-only">
+                  <li>
+                    <a href="https://github.com/felixvargas7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/in/felixgvargas" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/fxliez/" target"_blank" rel="noopener noreferrer" aria-label="Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
                 </ul>
             </div>
         </div>
