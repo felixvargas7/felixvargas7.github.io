@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Felix Vargas \\ Web Developer</title>
+  </head>
+  <body>
+    <!-- Potential Logo -->
+    <header>
+      <!-- Navigation -->
+    <p class="logo" aria-label="Felix Vargas homepage">FV</p>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+              <nav aria-label="Main navigation">
+              <ul class="nav-menu">
+                  <li>
+                      <a href="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#projects">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+    <!-- Hero Section -->
+      <section id="home"class="hero">
+
+        <!-- <div class="menacing menacing-hero-1" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-2" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-3" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-4" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-5" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-6" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-7" aria-hidden="true">ゴ</div>
+        <div class="menacing menacing-hero-8" aria-hidden="true">ゴ</div> -->
+
+        <p>WELCOME TO MY WORLD</p>
+        <h1>FELIX VARGAS</h1>
+        <p>ASPIRING DEVELOPER</p>
+        
+        <p>
+          CULTIVATING CREATIVITY.
+        </p>
+        <p>
+          STRIVING FOR CHANGE.
+        </p>
+        <p>
+          SHOWING WHAT I CAN DO.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </section>
+    <!-- About Me Section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <div>
+          <div>
+            <p>
+              Hello, my name is Felix Vargas, a software engineer from
+              Washington Heights, Manhattan. I`m passionate about design
+              and creativity, and love building innovative projects that show a
+              piece of me in them. When I`m not coding, you`ll find me cooking
+              new and intriguing recipes, playing video games, and reading
+              various categories of fiction. 
+            </p>
+          </div>
+          <div>
+            <h3 class="techskills-title">Tech Skills</h3>
+            <ul class ="techskills-grid">
+              <li class ="techskills-element">JavaScript</li>
+              <li class ="techskills-element">HTML</li>
+              <li class ="techskills-element">CSS</li>
+              <li class ="techskills-element">Node.js</li>
+              <li class ="techskills-element">Git</li>
+              <li class ="techskills-element">GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <!-- Project Cards Section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul class="projects-grid">
+          <li class="projects-card">
+            <h3>Rock, Paper, Scissors Project</h3>
+            <div><img src="img/rock-paper-scissors.png" alt="Rock, Papper, Scissors command-line game interface"></div>
+            <p>Utilized command line interface (CLI) to create a mini-game, tracking wins, losses and more</p>
+            <ul>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Command Terminal</li>
+            </ul>
+            <div>
+                <a class="projects-card-buttons"href="#home">Live Demo</a>
+                <a class="projects-card-buttons"href="#home">GitHub</a>
+            </div>
+          </li>
+          <li class="projects-card">
+              <h3>Personal Portfolio</h3>
+            <div><img src="img/personal-portfolio.png" alt="Personal Portfolio Project"></div>
+            <p>Constructed a webpage, showcasing projects created</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Claude AI</li>
+            </ul>
+            <div>
+                <a class="projects-card-buttons"href="#home">Live Demo</a>
+                <a class="projects-card-buttons"href="#home" aria-label="View Rock Paper Scissors project on GitHub">GitHub</a>
+            </div>
+          </li>
+          <li class="projects-card">
+              <h3>Stage-Race-Simulator</h3>
+            <div><img src="img/horse-race.png" alt="Horse-Race-Simulator"></div>
+            <p>(In progress) Created a simulated horse race using command line interface (CLI)</p>
+            <ul>
+                <li>JavaScript</li>
+                <li>Command Terminal</li>
+                <li>Tech Language 3</li>
+            </ul>
+            <div>
+                <a class="projects-card-buttons"href="#home">Live Demo</a>
+                <a class="projects-card-buttons"href="#home" aria-label="View Horse Race Simulator project on GitHub">GitHub</a>
+            </div>
+          </li>
+          <li class="projects-card">
+              <h3>Future Project</h3>
+            <div><img src="img/upcoming.png" alt="upcoming"></div>
+            <p>Future Project (Upcoming) Looking for inspiration to make a new project</p>
+            <ul>
+                <li>Tech Language/Skill</li>
+                <li>Tech Language/Skill</li>
+                <li>Tech Language/Skill</li>
+            </ul>
+            <div>
+                <a class="projects-card-buttons"href="#home">Live Demo</a>
+                <a class="projects-card-buttons"href="#home"  aria-label="View upcoming project on GitHub">GitHub</a>
+            </div>
+          </li>
+        </ul>
+        </ul>
+      </section>
+    <!-- Contact Info Section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Want to reach out to me? I'd love to chat, offer input, or collaborate on new experiences!</p>
+        <div>
+            <form action="">
+            <!-- <div> -->
+                <div class="contact-me-box">
+                    <label for="">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="contact-me-box">
+                    <label for="">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            <!-- </div> -->
+            <div class="contact-me-box">
+                <label for="">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="btn-submit btn btn-primary"href="#home" type="submit">Submit</button>
+            </form>
+            <div class="other-contacts">
+                <h3>Other ways to contact me >>></h3>
+                <ul class="contact-links-icon-only">
+                  <li>
+                    <a href="https://github.com/felixvargas7" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/in/felixgvargas" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/fxliez/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <p>Designed and built by Felix Vargas</p>
+      <p>Copyright 2026 All Rights Reserved</p>
+      <ul>
+        <li>
+            <a href=""></a>
+        </li>
+        <li>
+            <a href=""></a>
+        </li>
+        <li>
+            <a href=""></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
