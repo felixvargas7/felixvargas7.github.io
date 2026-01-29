@@ -63,7 +63,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
+main {
+    padding-top: 80px;
+}
 /* Typography CSS */
 
 @font-face {
@@ -308,6 +310,7 @@ header:has(#nav-toggle:checked) ~ nav {
   box-shadow: 0 4px 12px rgba(199, 55, 139, 0.3);
   width: 70%;
   align-self: center;
+  display: inline-block;
 }
 
 .btn-primary:hover {
@@ -561,8 +564,25 @@ header:has(#nav-toggle:checked) ~ nav {
 }
 
 .btn-submit {
-    width: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent-main), var(--accent-glow));
+  color: var(--text-primary);
+  border: 3px solid #F4D13D;
+  border-radius: var(--radius-md);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-family: 'Komika Text', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: var(--spacing-md);
+  font-size: 1rem;
 }
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(199, 55, 139, 0.5);
+}
+
 .other-contacts {
     margin-top: 50px;
 }
@@ -698,9 +718,12 @@ header:has(#nav-toggle:checked) ~ nav {
   .contact-me-box {
     width: 250px;
   }
+
   .btn-submit {
-    width: 400px;
+    width: auto;
+    min-width: 200px;
   }
+
   button,
   .btn {
     padding: 1rem 2rem;
