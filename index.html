@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Felix Vargas \\ Web Developer</title>
   </head>
-  <body>
+  <body>    
     <!-- Potential Logo -->
     <header>
       <!-- Navigation -->
@@ -99,7 +99,7 @@
         <ul class="projects-grid">
           <li class="projects-card">
             <h3>Rock, Paper, Scissors Project</h3>
-            <div><img src="img/rock-paper-scissors.png" alt="Rock, Papper, Scissors command-line game interface"></div>
+            <div><img src="img/rock-paper-scissors.png" alt="Rock, Paper, Scissors command-line game interface"></div>
             <p>Utilized command line interface (CLI) to create a mini-game, tracking wins, losses and more</p>
             <ul>
                 <li>JavaScript</li>
@@ -108,7 +108,7 @@
             </ul>
             <div>
                 <a class="projects-card-buttons"href="#home">Live Demo</a>
-                <a class="projects-card-buttons"href="#home">GitHub</a>
+                <a class="projects-card-buttons"href="https://github.com/felixvargas7/rock-paper-scissors" target="_blank">GitHub</a>
             </div>
           </li>
           <li class="projects-card">
@@ -122,7 +122,7 @@
             </ul>
             <div>
                 <a class="projects-card-buttons"href="#home">Live Demo</a>
-                <a class="projects-card-buttons"href="#home" aria-label="View Rock Paper Scissors project on GitHub">GitHub</a>
+                <a class="projects-card-buttons"href="#home">GitHub</a>
             </div>
           </li>
           <li class="projects-card">
@@ -131,8 +131,8 @@
             <p>(In progress) Created a simulated horse race using command line interface (CLI)</p>
             <ul>
                 <li>JavaScript</li>
+                <li>Command TerminalNode.js</li>
                 <li>Command Terminal</li>
-                <li>Tech Language 3</li>
             </ul>
             <div>
                 <a class="projects-card-buttons"href="#home">Live Demo</a>
@@ -154,30 +154,34 @@
             </div>
           </li>
         </ul>
-        </ul>
       </section>
     <!-- Contact Info Section -->
       <section id="contact">
         <h2>Contact Me</h2>
         <p>Want to reach out to me? I'd love to chat, offer input, or collaborate on new experiences!</p>
-        <div>
-            <form action="">
+        
+            <form 
+            action="https://formspree.io/f/mykjelkr" 
+            method="POST"
+            >
             <!-- <div> -->
+
                 <div class="contact-me-box">
-                    <label for="">Name</label>
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                 </div>
                 <div class="contact-me-box">
-                    <label for="">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="_replyto" required>
                 </div>
             <!-- </div> -->
             <div class="contact-me-box">
-                <label for="">Message</label>
+                <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button class="btn-submit btn btn-primary"href="#home" type="submit">Submit</button>
-            </form>
+            <button class="btn-submit" type="submit">Submit</button>
+          </form>
+
             <div class="other-contacts">
                 <h3>Other ways to contact me >>></h3>
                 <ul class="contact-links-icon-only">
@@ -198,23 +202,11 @@
                   </li>
                 </ul>
             </div>
-        </div>
       </section>
     </main>
     <footer role="contentinfo">
       <p>Designed and built by Felix Vargas</p>
       <p>Copyright 2026 All Rights Reserved</p>
-      <ul>
-        <li>
-            <a href=""></a>
-        </li>
-        <li>
-            <a href=""></a>
-        </li>
-        <li>
-            <a href=""></a>
-        </li>
-      </ul>
     </footer>
   </body>
 </html>
