@@ -336,6 +336,9 @@ header:has(#nav-toggle:checked) ~ nav {
   transform: translateY(-3px);
 }
 
+.majflix {
+  width: 60%;
+}
 /* .hero .menacing {
   position: absolute;
   font-size: var(--menace-size-sm);
